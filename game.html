@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="Game.js" type="text/javascript"></script>
+</head>
+<body>
+	<h3>Javscript Game Engine</h3>
+	<p>Open your javascript console to see the engine running...</p>
+	<script>
+		(function() {
+			window.onload = function() {
+				
+				var game = new GameEngine();
+				
+				var options = {
+					desiredFps: 15
+				};
+				
+				game.run(options);
+			};
+		})();
+	</script>
+</body>
+</html>
